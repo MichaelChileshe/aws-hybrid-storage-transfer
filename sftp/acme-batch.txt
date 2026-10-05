@@ -1,0 +1,5 @@
+put build/acme-invoice-0001.csv
+ls -l
+-cd ..
+pwd
+ls -l

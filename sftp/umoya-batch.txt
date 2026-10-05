@@ -1,0 +1,4 @@
+put build/umoya-statement-0001.csv
+ls -l
+-get acme-invoice-0001.csv build/should-not-exist.csv
+-get /partners/partner-acme/acme-invoice-0001.csv build/should-not-exist.csv

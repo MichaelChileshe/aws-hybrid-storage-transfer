@@ -1,0 +1,12 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "FindTheGatewayShareReadOnly",
+      "Effect": "Allow",
+      "Action": ["storagegateway:ListFileShares", "storagegateway:DescribeNFSFileShares",
+                 "storagegateway:DescribeGatewayInformation"],
+      "Resource": "*"
+    }
+  ]
+}
