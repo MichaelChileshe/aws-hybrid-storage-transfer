@@ -159,7 +159,7 @@ Three pieces bill **by the hour while they exist**, so I built, measured and tor
 | S3, CloudWatch Logs, Storage Gateway service | per GB / per request | cents |
 | **Total (estimate)** | | **about US$2–4** |
 
-At Kgotla's real size the per-GB DataSync charge dominates: 40 TB × US$0.0125 ≈ **US$500** once, against weeks of a busy office line. Details: [`docs/cost-model.md`](docs/cost-model.md).
+At Kgotla's real size the per-GB DataSync charge dominates: 40 TB × US$0.0125 ≈ **US$500** once, against weeks of a busy office line. Cost Explorer for 5–6 October ([`34`](docs/screenshots/34-cost-explorer-oct-5-6.png)) showed US$3.53 for the whole account, of which about US$2.04 was everything except always-on Config and Security Hub: mainly this and the two other builds I ran on 5 October. Details: [`docs/cost-model.md`](docs/cost-model.md).
 
 ---
 
@@ -226,7 +226,7 @@ Kgotla's archive holds payment records and customer documents, so the transfer i
     ├── cost-model.md
     ├── teardown.md
     ├── adr/                          # 6 architecture decision records
-    └── screenshots/                  # 33 build, test and teardown screenshots, in order
+    └── screenshots/                  # 34 build, test, teardown and cost screenshots, in order
 ```
 
 > **No account IDs are committed.** Templates use `@@NAME@@` placeholders filled at run time, and account IDs are masked in the screenshots. There is no `Deny` statement anywhere, and nothing has deletion protection, so teardown can't lock anyone out.
